@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",                  // コンパイル後のJSのターゲットバージョン
+      "module": "CommonJS",               // モジュールシステム（Node.js用）
+      "strict": true,                     // 厳格モードを有効化
+      "esModuleInterop": true,            // ESモジュール互換性を有効化
+      "outDir": "dist",                   // 出力先ディレクトリ
+      "rootDir": "src"                    // ソースコードディレクトリ
+    },
+    "include": ["src/**/*"],              // コンパイル対象
+    "exclude": ["node_modules"]           // 除外対象
+  }
