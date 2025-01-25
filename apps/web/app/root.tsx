@@ -9,6 +9,16 @@ import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
 
+import { ApolloClient } from '@apollo/client/core';
+import { InMemoryCache } from '@apollo/client/cache';
+
+export const client = new ApolloClient({
+  // GraphQLサーバーのURLを指定
+  uri: 'http://localhost:4000/graphql',
+  // クエリ結果をキャッシュする時に使うキャッシュ方法
+  cache: new InMemoryCache(),
+});
+
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
