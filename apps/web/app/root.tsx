@@ -7,10 +7,10 @@ import {
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 
-import "./tailwind.css";
-
 import { ApolloClient } from '@apollo/client/core';
 import { InMemoryCache } from '@apollo/client/cache';
+
+import styles from "./index.css?url"
 
 export const client = new ApolloClient({
   // GraphQLサーバーのURLを指定
@@ -20,17 +20,10 @@ export const client = new ApolloClient({
 });
 
 export const links: LinksFunction = () => [
-  { rel: "preconnect", href: "https://fonts.googleapis.com" },
-  {
-    rel: "preconnect",
-    href: "https://fonts.gstatic.com",
-    crossOrigin: "anonymous",
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
-  },
+  { rel: "stylesheet", href: styles },
 ];
+
+
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (

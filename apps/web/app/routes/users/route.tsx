@@ -1,6 +1,7 @@
 import { gql } from '@apollo/client/core';
 import { client } from "~/root"
 import { useRevalidator, Link, useLoaderData, } from '@remix-run/react';
+import { css } from "styled-system/css";
 
 const getUsers = gql`
   query GetTodos {
@@ -26,6 +27,7 @@ export default function App() {
   const { users } = useLoaderData<LoaderData>();
   return (
     <div>
+      <div className={css({ color: "red", fontWeight: 'bold' })}>Hello 🐼!</div>
       <Link to={"/users/create"}>新規作成画面へ</Link>
       <hr />
       {users.map((user) => (
