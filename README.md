@@ -10,7 +10,7 @@ https://www.notion.so/Todo-180178a7b330804fbb5cc970b2faf6e6
 # 記録
 
 2/11
-- [ ] vitestを導入する
+- [x] vitestを導入する
 - [ ] vitestで適当に何かテストを書く
 - [ ] githab actions で push時に ciで自動テスト
 
