@@ -1,0 +1,24 @@
+name: unit-test for frontend
+
+on: [push]
+
+jobs:
+  ci:
+    name: ci
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # github actionsにはデフォルトでpnpmは入っていないため
+    - name: Install pnpm
+      run: |
+        npm install -g pnpm
+
+    - name: Unit Test
+      run: |
+        cd apps/web
+        pnpm install
+        pnpm test
