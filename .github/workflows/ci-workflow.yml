@@ -12,6 +12,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    # github actionsにはデフォルトでpnpmは入っていないため
+    - name: Install pnpm
+      run: |
+        npm install -g pnpm
+
     - name: Unit Test
       run: |
         cd apps/web
