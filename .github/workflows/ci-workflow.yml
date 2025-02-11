@@ -13,5 +13,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Unit Test
-      run: cd ${{ github.workspace }}
-      run: cd apps/web && pnpm install && pnpm test
+      run: |
+        cd apps/web
+        pnpm install
+        pnpm test
