@@ -1,7 +1,21 @@
+
+手順等をNotionでまとめている
 https://www.notion.so/Todo-180178a7b330804fbb5cc970b2faf6e6
 
+# ルール
+- mainから作業ブランチを切り、そこで作業
+- 日付でtodoリストをreadmeに書く
+- 手順やノウハウはNotionに書く
+
+# 記録
+
+2/11
+- [ ] vitestを導入する
+- [ ] vitestで適当に何かテストを書く
+- [ ] githab actions で push時に ciで自動テスト
+
+
 2025/02/07時点
-フロントエンドから、graphqlを呼びだし、Userのcreateとindexができる。
-pandacssが使用できるようになっている
+- フロントエンドから、graphqlを呼びだし、Userのcreateとindexができる。
+- pandacssが使用できるようになっている
 graphqqlクライアントとして、apploClientを使用しているが、会社ではgraphql requestを使用している。（ただ、graphqlrequestが一般的に良いかはわからない）
-今のところは正常に動いていて、挫折でストップしているわけではない。
