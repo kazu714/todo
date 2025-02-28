@@ -13,15 +13,16 @@ https://www.notion.so/Todo-180178a7b330804fbb5cc970b2faf6e6
 - [ ] cssを整える
 - [ ] awsにデプロイする
 - [ ] cdk cloudFormation
-- [ ] docker compose
 
 
 2/11
 - [x] vitestを導入する
 - [x] vitestで適当に何かテストを書く
 - [x] githab actions で push時に ciで自動テスト
-- [ ] アプリをdockerでも動かせるようにする ←　モノレポ？はむずそうやから後回し
-
+- [x] wsl上でdockerを動かせるようにはしたが、（↓のようにdockerfileは書き方がわからん）
+- [ ] アプリをdockerでも動かせるようにする
+  - pnpmをdockerでやるのがめんどくさいっぽい？よくわからん
+  - 今はやらないでおく
 
 2025/02/07時点
 - フロントエンドから、graphqlを呼びだし、Userのcreateとindexができる。
