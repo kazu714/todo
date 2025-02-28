@@ -20,7 +20,7 @@ https://www.notion.so/Todo-180178a7b330804fbb5cc970b2faf6e6
 - [x] vitestを導入する
 - [x] vitestで適当に何かテストを書く
 - [x] githab actions で push時に ciで自動テスト
-- [ ] アプリをdockerでも動かせるようにする
+- [ ] アプリをdockerでも動かせるようにする ←　モノレポ？はむずそうやから後回し
 
 
 2025/02/07時点
