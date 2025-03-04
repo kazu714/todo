@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client/core';
 import { client } from "~/root"
-import { useRevalidator, Link, useLoaderData, } from '@remix-run/react';
+import { Link, useLoaderData, } from '@remix-run/react';
 import { css } from "styled-system/css";
 
 const getUsers = gql`
