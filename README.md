@@ -17,6 +17,7 @@ https://www.notion.so/Todo-180178a7b330804fbb5cc970b2faf6e6
 3/4
 - [x] turbo run を導入して、pnpm devで一括で実行できるようにする
 - [x] 全画面共通のレイアウトを設定する（route/_main）
+- [x] textFeildコンポーネントを作成
 
 2/11
 - [x] vitestを導入する
