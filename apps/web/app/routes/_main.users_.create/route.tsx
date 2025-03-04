@@ -1,6 +1,7 @@
 import { gql } from '@apollo/client/core';
 import { client } from "~/root"
 import { Form, redirect, useActionData, useLoaderData } from '@remix-run/react';
+import TextField from '~/features/common/text-field';
 
 const createUser = gql`
     mutation CreateUser($name: String!) {
@@ -31,7 +32,7 @@ export default function App() {
     return (
         <div>
             <Form method="post">
-                <input type="text" name="name" required />
+                <TextField name="name" required />
                 <button type="submit">userを登録する</button>
             </Form>
         </div>
