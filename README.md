@@ -14,6 +14,8 @@ https://www.notion.so/Todo-180178a7b330804fbb5cc970b2faf6e6
 - [ ] awsにデプロイする
 - [ ] cdk cloudFormation
 
+3/4
+- [x] turbo run を導入して、pnpm devで一括で実行できるようにする
 
 2/11
 - [x] vitestを導入する
